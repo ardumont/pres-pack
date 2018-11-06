@@ -4,10 +4,8 @@
 
 ;;; Code:
 
-(use-package ox-reveal
-  :defer 4
-  :config
-  (setq org-reveal-root (format "%s/.prelude-packs/pres-pack/resources/reveal.js-2.6.1" (expand-file-name "~"))))
+(require 'ox-reveal)
+(setq org-reveal-root (expand-file-name "./resources/reveal.js-2.6.1"))
 
 (provide 'pres-pack)
 ;;; pres-pack.el ends here
